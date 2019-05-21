@@ -1,0 +1,14 @@
+uuid: ec59c93a-dff1-4eb6-aa8c-a33c9fd3bd91
+name: 'Composer Demo'
+mail: composer@drupaltutor.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
