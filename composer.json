@@ -82,7 +82,8 @@
         },
 	"patches": {
 		"drupal/pathauto": {
-			"Add install messages - 3009974": "https://www.drupal.org/files/issues/2018-12-12/pathauto-install_messages-3009974.patch"
+			"Add install messages - 3009974": "https://www.drupal.org/files/issues/2018-12-12/pathauto-install_messages-3009974.patch",
+			"Try to change the help text": "patches/pathauto-bad-patch.patch"
 		}
 	}
     }
