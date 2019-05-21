@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25c8f65b37ffc50ee9ce234fbc959d53",
+    "content-hash": "eabcf8310a29d42c9cdaf4860601d9ed",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2715,6 +2715,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Add install messages - 3009974": "https://www.drupal.org/files/issues/2018-12-12/pathauto-install_messages-3009974.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

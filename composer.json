@@ -79,6 +79,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
-        }
+        },
+	"patches": {
+		"drupal/pathauto": {
+			"Add install messages - 3009974": "https://www.drupal.org/files/issues/2018-12-12/pathauto-install_messages-3009974.patch"
+		}
+	}
     }
 }
