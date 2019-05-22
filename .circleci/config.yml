@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:latest
+    steps:
+      - run: curl -LO https://deployer.org/deployer.phar
+      - run: sudo mv deployer.phar /usr/local/bin/dep
+      - run: sudo chmod +x /usr/local/bin/dep
+      - checkout
+      - run: dep deploy
