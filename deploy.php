@@ -35,6 +35,7 @@ set('drush', 'vendor/bin/drush');
 host('dtclass.com')
     ->user('composerdemo')
     ->port(2200)
+    ->addSshOption('StrictHostKeyChecking', 'no')
     ->set('deploy_path', '~/{{application}}');    
     
 
