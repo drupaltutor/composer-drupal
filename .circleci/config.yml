@@ -3,6 +3,9 @@ jobs:
   build:
     docker:
       - image: circleci/php:latest
+    branches:
+      only:
+        - master
     steps:
       - run: curl -LO https://deployer.org/deployer.phar
       - run: sudo mv deployer.phar /usr/local/bin/dep
