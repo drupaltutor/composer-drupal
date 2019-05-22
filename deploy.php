@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/common.php';
 
 // Project name
-set('application', 'my_project');
+set('application', 'composer-demo-deployer');
 
 // Project repository
 set('repository', 'git@github.com:zengenuity/composer-demo.git');
@@ -13,16 +13,25 @@ set('repository', 'git@github.com:zengenuity/composer-demo.git');
 set('git_tty', true); 
 
 // Shared files/dirs between deploys 
-set('shared_files', []);
-set('shared_dirs', []);
+set('shared_files', [
+	'.env',
+	'web/sites/default/services.yml',
+]);
+set('shared_dirs', [
+	'web/sites/default/files',
+]);
 
 // Writable dirs by web server 
-set('writable_dirs', []);
+set('writable_dirs', [
+	'web/sites/default/files',
+]);
 set('allow_anonymous_stats', false);
 
 // Hosts
 
-host('project.com')
+host('dtclass.com')
+    ->user('composerdemo')
+    ->port(2200)
     ->set('deploy_path', '~/{{application}}');    
     
 
